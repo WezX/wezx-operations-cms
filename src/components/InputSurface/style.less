@@ -1,0 +1,32 @@
+@import '~antd/es/style/themes/default.less';
+.inputImageBox{
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  background-color: fadeout(@skeleton-color, 0.1);
+  border: 1px dashed @avatar-bg;
+  border-radius: @avatar-border-radius;
+  cursor: pointer;
+  animation: @animation-duration-base;
+  &:hover{
+    border: 1px dashed @primary-color;
+  }
+  &>span{
+    width: 100%;
+    height: 100%;
+    &>*{
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+
+.inputImageText{
+  animation: @animation-duration-base;
+  &:hover{
+    color: @primary-color;
+    &>span{
+      color: @primary-color;
+    }
+  }
+}
